@@ -20,3 +20,6 @@ app.get('/shop',(요청,응답) => {
     응답.send('쇼핑페이지 입니다')
 })
 
+app.get('/about',(요청,응답) => {
+    응답.sendFile(__dirname + '/myName.html')
+})
